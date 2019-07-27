@@ -24,9 +24,9 @@ impl Board {
     pub fn set_piece(&mut self, player_num: u8, position: usize) -> bool{
         if self.spots[position] == 0 {
             self.spots[position] = player_num+1;
-            return true;
+            true
         } else {
-            return false;
+            false
         }
     }
 
